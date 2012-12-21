@@ -6,11 +6,6 @@
 
   class Hello
   {
-     public function __construct()
-     {
-
-     }
-
      public function sayHello($name)
      {
         return array("Response" => "Hello, " . $name);
