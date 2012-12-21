@@ -15,11 +15,6 @@
      {
         return array("Response" => "Hello, " . $name);
      }
-
-     public function test()
-     {
-      
-     }
   }
 
   $hello = new Hello();
