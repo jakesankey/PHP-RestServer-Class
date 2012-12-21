@@ -12,16 +12,16 @@ the RestServer class.
 
 Example:
 
-class Hello
-{
-  public static function sayHello($name)
-  {
-    return json_encode(array("Response" => "Hello, " . $name));
-  }
-}
+    class Hello
+    {
+      public static function sayHello($name)
+      {
+        return json_encode(array("Response" => "Hello, " . $name));
+      }
+    }
 
-$rest = new RestServer(Hello);
-$rest->handle();
+    $rest = new RestServer(Hello);
+    $rest->handle();
 
 
 Then simply make calls by GET or POST.
