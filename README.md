@@ -30,7 +30,7 @@ Then simply make calls by GET or POST.
 GET example:
 
 http://server.com/file.php?method=sayHello&name=World
-
+The method and parameter names are case-insensitive.
 
 The class is smart enough to detect if the requested method exists and if you have provided 
 the correct parameters for the given method. If the method does not exist, the response will let you know.
