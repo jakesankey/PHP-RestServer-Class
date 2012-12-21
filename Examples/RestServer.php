@@ -45,7 +45,12 @@
 	
 					if (count($pArray) == $pCount && !in_array(null, $pArray))
 					{
-						echo call_user_func_array(array($this->serviceClass, $method), $pArray);
+						$result = call_user_func_array(array($this->serviceClass, $method), $pArray);
+
+						if ($result != null)
+						{
+							echo json_encode($result);
+						}
 					}
 					else
 					{

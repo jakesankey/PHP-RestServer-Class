@@ -8,7 +8,7 @@
   {
      public static function sayHello($name)
      {
-        return json_encode(array("Response" => "Hello, " . $name));
+        return array("Response" => "Hello, " . $name);
      }
   }
 
