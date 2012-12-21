@@ -16,7 +16,8 @@ Example:
     {
       public static function sayHello($name)
       {
-        return json_encode(array("Response" => "Hello, " . $name));
+        // RestServer will json_encode this array before returning it to the client.
+        return array("Response" => "Hello, " . $name);
       }
     }
 
@@ -37,9 +38,7 @@ If the parameters are wrong or certain parameters are missing, the reponse will 
 required for the method.
 
 NOTE:
-The class will respond with JSON messages if an incorrect method or parameter are supplied. If the method and parameters
-are correct, it will respond with whatever message format your class provides (note the example above returns a 
-JSON encoded object, thus the RestServer class will return a JSON message to the client).
+RestServer automatically encodes your return objects as JSON. No need to pre-encode objects returned as JSON.
 
 LICENSE:
 
