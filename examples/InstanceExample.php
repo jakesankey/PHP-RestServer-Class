@@ -1,16 +1,16 @@
 <?php
 
-  require_once "RestServer.php";
+  require_once "../RestServer.php";
 
   class Hello
   {
-     // example: http://path/to/Examples/Instance.php?method=sayHello&name=World
+     // example: http://path/to/Examples/InstanceExample.php?method=sayHello&name=World
      public function sayHello($name)
      {
         return array("Response" => "Hello, " . $name);
      }
 
-     // example: http://path/to/Examples/Instance.php?method=addInts&n1=3&n2=5
+     // example: http://path/to/Examples/InstanceExample.php?method=addInts&n1=3&n2=5
      public function addInts($n1, $n2)
      {
         if (is_numeric($n1) && is_numeric($n2))
