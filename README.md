@@ -31,6 +31,8 @@ Then simply make calls by GET or POST.
 (The method and parameter names are case-insensitive.)
 
     http://server.com/file.php?method=sayHello&name=World
+    
+Try the live examples of <a href='http://jakesankey.com/projects/php/RestServer/example.php?method=sayHello&name=World' target='_blank'>`sayHello`</a> and <a href='http://jakesankey.com/projects/php/RestServer/example.php?method=addInts&n1=15&n2=10' target='_blank'>`addInts`</a>.
 
 The class is smart enough to detect if the requested method exists and if you have provided 
 the correct parameters for the given method. If the method does not exist, the response will let you know.
