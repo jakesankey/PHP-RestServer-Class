@@ -40,4 +40,4 @@ If the parameters are wrong or certain parameters are missing, the reponse will 
 required for the method.
 
 <b>NOTE:</b>
-RestServer automatically encodes your return objects as JSON. No need to pre-encode objects returned as JSON.
+RestServer automatically encodes your return objects as JSON. No need to pre-encode objects before returning them.
