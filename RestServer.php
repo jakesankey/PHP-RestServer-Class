@@ -17,6 +17,10 @@
 					
 				if ($serviceClass != null) {
 					$ref = new ReflectionMethod($serviceClass, $method);
+					if (!$ref->isPublic()) {
+						echo json_encode(array('error' => 'API call is invalid.'));
+					        return ;
+					}
 					$params = $ref->getParameters();
 					$paramCount = count($params);
 					$pArray = array();
