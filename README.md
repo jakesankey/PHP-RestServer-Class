@@ -12,10 +12,8 @@ the RestServer class.
 
 <b>Example:</b>
 
-    class Hello
-    {
-      public static function sayHello($name)
-      {
+    class Hello {
+      public static function sayHello($name) {
         // RestServer will json_encode this array before returning it to the client.
         return array("Response" => "Hello, " . $name);
       }
