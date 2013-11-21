@@ -15,7 +15,7 @@ It no longer matters if you pass in an instance or simply the class names. RestS
 Also, new in this version, instead of passing in the class to expose via the RestServer constructor, you will now use the addServiceClass method. This allows you to expose as many service classes as you'd like.
 
 <b>Example:</b>
-
+```php
 	class Hello {
 		// example: http://path/to/example.php?method=sayHello&name=World
 		public function sayHello($name) {
@@ -45,7 +45,7 @@ Also, new in this version, instead of passing in the class to expose via the Res
     $rest->addServiceClass(Hello);
     $rest->addServiceClass(Goodbye);
     $rest->handle();
-
+```
 
 Then simply make calls by GET or POST.
 
