@@ -4,7 +4,7 @@
 		private $serviceClasses = array();
 
 		public function addServiceClass($serviceClass) {
-			$this->serviceClasses[count($this->serviceClasses)] = $serviceClass;
+			$this->serviceClasses[] = $serviceClass;
 		}
 	
 		public function handle() {
